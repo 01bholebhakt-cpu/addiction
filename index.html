@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Control Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Self-Control Tracker</h1>
+    <p>Take control of your habits, improve your mental health</p>
+  </header>
+
+  <section class="quiz">
+    <h2>Self-Assessment Quiz</h2>
+    <form id="quizForm">
+      <label>How often do you struggle with the habit?</label>
+      <select id="frequency">
+        <option value="1">Rarely</option>
+        <option value="2">Sometimes</option>
+        <option value="3">Often</option>
+        <option value="4">Always</option>
+      </select>
+
+      <label>Do you feel it affects your life?</label>
+      <select id="impact">
+        <option value="1">Not at all</option>
+        <option value="2">A little</option>
+        <option value="3">Moderately</option>
+        <option value="4">Severely</option>
+      </select>
+
+      <button type="submit">Get Plan</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <section class="plan">
+    <h2>Your Personalized Plan</h2>
+    <ul id="planList">
+      <!-- JS will populate this -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Self-Control Tracker. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
